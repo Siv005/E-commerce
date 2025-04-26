@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jostra</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <h1>JosTra</h1>
+      <div class="navbar-links">
+        <p class="navbar-link">
+          <a href="index.html"> Home </a>
+        </p>
+        <p class="navbar-link">
+          <a href="collection.html"> Collections</a>
+        </p>
+        <p class="navbar-link">
+          <a href="contact.html"> Contact </a>
+        </p>
+      </div>
+      <div class="navbar-menu-toggle">
+        <i class="fa-solid fas fa-bars" onclick="showNavbar()"></i>
+      </div>
+    </nav>
+    <!-- side navbar -->
+    <div class="side-navbar">
+      <p style="text-align: right" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+      <div class="side-navbar-links">
+        <p class="side-navbar-link">
+          <a href="index.html"> Home </a>
+        </p>
+        <p class="side-navbar-link">
+          <a href="collection.html"> Collections</a>
+        </p>
+        <p class="side-navbar-link">
+          <a href="contact.html"> Contact </a>
+        </p>
+      </div>
+    </div>
+    <!-- product -->
+    <div class="product-section">
+      <form class="product-search">
+        <input type="text" id="search" placeholder="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+      <div class="products" id="products">
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Mens Suits</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/1328545/pexels-photo-1328545.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Womens</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/1034859/pexels-photo-1034859.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Jeans</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/1496647/pexels-photo-1496647.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>T-Shirts</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/175696/pexels-photo-175696.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Trend</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/988914/pexels-photo-988914.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Fancy</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/1006994/pexels-photo-1006994.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Brands</p>
+        </div>
+        <div class="products-box">
+          <img
+            src="https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=200"
+            alt="img"
+          />
+          <p>Ladies Fashion</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-box-1">
+          <h2 class="headingText">JosTra</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.
+          </p>
+          <div class="footer-icon-container">
+            <i class="fa-brands fab fa-instagram" style="color: #ffffff"></i>
+            <i class="fa-brands fab fa-facebook" style="color: #ffffff"></i>
+            <i class="fa-brands fab fa-twitter" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <p>@2025 JosTra.com</p>
+    </div>
+    <script src="collection.js"></script>
+  </body>
+</html>
