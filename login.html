@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #7f53f7b2;
+      }
+      h1 {
+        color: white;
+        margin-bottom: 20px;
+      }
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 10px;
+        border-radius: 10px;
+      }
+      .signup-form input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      .signup-form button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4808f7;
+        color: white;
+        cursor: pointer;
+      }
+      .signup-form button:hover {
+        background-color: #581fe7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>welcome to login page</h1>
+      <form class="signup-form">
+        <input type="text" placeholder="user email" required id="umail" />
+        <input type="password" placeholder="password" required id="upass" />
+        <button type="submit">login</button>
+      </form>
+    </div>
+
+    <script>
+      let form = document.forms[0];
+      console.log(form);
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let usermail = document.getElementById("umail").value;
+        let userpass = document.getElementById("upass").value;
+        //accessing localstorage data
+        let lmail = localStorage.getItem("email");
+        let lpass = localStorage.getItem("password");
+        console.log(`user data  ${usermail},${upass}`);
+        console.log(`localstorage  ${lmail},${lpass}`);
+        if (usermail !== lmail) {
+          alert("user email not found");
+        } else if (userpass !== lpass) {
+          alert("user password is wrong");
+        } else {
+          alert("login successfully....");
+          window.location.href = "index.html";
+          //   open("index.html");
+        }
+      });
+    </script>
+  </body>
+</html>
